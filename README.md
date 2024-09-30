@@ -11,7 +11,7 @@ Inherits: ERC721, Ownable
 Token Name: AstroPet (APET)
 Purpose: This contract manages the minting, ownership, and trading of AstroPets. Each AstroPet is an NFT that can be bought, sold, and traded using the ERC20 XFI token.
 
-# Key Features: #
+ **Key Features:**
 - Minting AstroPets: Players can mint a new AstroPet by paying 100 XFI tokens.
 Each AstroPet has attributes: name, color, size, power, level, and experience.
 Minted pets start at level 1 and can evolve based on their experience and power.
@@ -41,11 +41,11 @@ mintAstroPet: Allows players to mint a new AstroPet by providing attributes like
 listAstroPet: Enables the owner of an AstroPet to list it for sale by specifying a price in XFI.
 buyAstroPet: Facilitates the purchase of a listed AstroPet by transferring the required XFI from the buyer to the seller.
 
-2. **Marketplace Contract**
+2. # Marketplace Contract
 Contract Name: Marketplace
 Purpose: The Marketplace contract facilitates the trading of AstroPets, allowing players to list and purchase pets using the XFI token.
 
-# Key Features:
+**Key Features:**
 - Listing Items for Sale: Players can list their AstroPets for sale by specifying a price in XFI.
 Each listing is mapped to the tokenId of the pet.
 - Buying Items: Players can purchase listed AstroPets by transferring the required amount of XFI tokens.
@@ -59,15 +59,15 @@ ItemSold: Emitted when an item is sold.
 listItem: Allows a player to list an AstroPet for sale by specifying the tokenId and price.
 buyItem: Allows a player to purchase a listed AstroPet by transferring the required XFI to the seller and receiving the ownership of the pet.
 
-3. **MockERC20 Contract**
+3. # MockERC20 Contract
 Contract Name: MockERC20
 Purpose: This contract is a mock implementation of an ERC20 token that represents the XFI token used for transactions within the AstroPet ecosystem.
 
-# Key Features:
+**Key Features:**
 - Initial Supply: The total initial supply of XFI tokens is minted and assigned to the deployer.
 - Decimals: The token has 18 decimals, which is standard for ERC20 tokens.
 
-4.**Deployment Script**
+4. # Deployment Script
 The deployment script deploys both the AstroPet and Marketplace contracts:
 with contract addresses:
 
@@ -80,13 +80,13 @@ https://test.xfiscan.com/address/0x359451AC3C73827A7653C0Ab7D30243844a55447
 
 https://test.xfiscan.com/address/0x2Fad953E1F524e6590EdF50BDA6FCB391Dd4Fd96
 
-5. **Game Flow**
+5. # Game Flow
 - Minting AstroPets: Players use XFI tokens to mint new AstroPets with random attributes.
 - Trading: Players can list their pets for sale in the marketplace.
 Other players can buy listed pets using XFI tokens.
 - Battles and Missions: AstroPets gain experience and rewards by participating in in-game activities like battles and missions.
 
-6. **Summary of $XFI Usage:**
+6. # Summary of $XFI Usage:
 - Utility Token: $XFI acts as a utility token within the AstroPet ecosystem, facilitating transactions for minting, listing, and purchasing AstroPets.
 - Incentivization: The token can also be used to reward players for winning battles or completing missions in future gameplay expansions.
 
@@ -94,7 +94,7 @@ Other players can buy listed pets using XFI tokens.
    - Cross-Compatible: $XFI is implemented using ERC20, ensuring compatibility with various wallets and decentralized applications.
    - Ecosystem-Driven: The token serves as the backbone of the in-game economy, driving engagement and providing value to players.
 
-7. **MVP Features**
+7. # MVP Features
 - AstroPet Contract:
    - Minting: Users can mint new AstroPets by paying a fee in the $XFI token.
    - Attributes: Each AstroPet has defined attributes like name, color, size, power, level, experience, and evolution status.
@@ -106,12 +106,15 @@ Other players can buy listed pets using XFI tokens.
 
 - $XFI Token: A mock ERC20 token that users use for transactions within the AstroPet ecosystem.
 
-8. **Proof of MVP**
+8. # Proof of MVP
 - Smart Contract Code: The source code of the AstroPet, Marketplace, and MockERC20 contracts as shared earlier.
 - Deployment Scripts: Scripts used to deploy the contracts to the blockchain.
 - Transaction Logs: Any test transactions or deployment logs showing the minting, listing, and buying of AstroPets using $XFI tokens.
 
-9. **Future Improvements:**
+9. # Future Improvements:
 - Evolution and Customization: Add features for evolving AstroPets into more powerful forms based on their level and experience.
 - Rare Items: Implement rare items that can boost the power of AstroPets, adding strategic gameplay elements.
 - Cross-chain Support: Integrate cross-chain functionality to allow trading AstroPets on other networks.
+
+10. #  License
+This project is licensed under the MIT License. For more details, please refer to the LICENSE file included in the repository.
