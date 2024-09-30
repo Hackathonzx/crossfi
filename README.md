@@ -71,6 +71,10 @@ Purpose: This contract is a mock implementation of an ERC20 token that represent
 The deployment script deploys both the AstroPet and Marketplace contracts:
 with contract addresses:
 
+- to compile run: npx hardhat compile
+- to run test: npx hardhat test
+- run: npx hardhat run ignition/modules/deploy.js --network CrossFiTestnet
+
 - Marketplace deployed to: 0x359451AC3C73827A7653C0Ab7D30243844a55447
 - AstroPet deployed to: 0x2Fad953E1F524e6590EdF50BDA6FCB391Dd4Fd96
 
